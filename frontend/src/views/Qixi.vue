@@ -19,6 +19,9 @@
     <div class="content">
       <!-- 标题区 -->
       <header class="header">
+        <div class="brand-wrap">
+          <img src="/logo.svg" alt="yhy & ysy logo" class="brand-logo" />
+        </div>
         <h1 class="title">🌙 七夕致我的女孩 🌙</h1>
         <p class="subtitle">
           星河璀璨，鹊桥相连。在这个浪漫的七夕，<br />
@@ -374,6 +377,24 @@ onUnmounted(() => {
   padding: 60px 0 40px;
 }
 
+.brand-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  width: min(260px, 52vw);
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  filter: drop-shadow(0 10px 28px rgba(156, 39, 176, 0.18));
+  background: rgba(17, 14, 20, 0.22);
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .title {
   font-size: 2.8rem;
   background: linear-gradient(135deg, #e91e63, #9c27b0);
@@ -675,6 +696,9 @@ onUnmounted(() => {
 
 /* ===== 响应式 ===== */
 @media (max-width: 768px) {
+  .brand-logo {
+    width: min(200px, 58vw);
+  }
   .title {
     font-size: 1.8rem;
   }
