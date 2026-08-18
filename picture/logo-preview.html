@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOGO 预览 - yshy</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  min-height: 100vh; display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  background:#121214; font-family:'Playfair Display', Didot, 'Times New Roman', serif;
+}
+.card {
+  background: radial-gradient(ellipse at center, #2C2C30 0%, #0D0D0F 100%);
+  border-radius:28px; padding:48px 72px;
+  border:0.5px solid rgba(191,149,63,0.18);
+  box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+  max-width: 92vw;
+}
+.card svg, .card img { display:block; max-width:100%; height:auto; }
+.tag { color:#BF953F; margin-top:28px; font-size:14px; letter-spacing:8px; opacity:0.5; }
+.heart { color:rgba(232,180,180,0.35); font-size:13px; letter-spacing:5px; margin-top:10px; }
+.hint { margin-top:32px; font-size:12px; color:#555; letter-spacing:2px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <style>.m{font-family:'Playfair Display','Didot','Bodoni MT','Georgia','Times New Roman',serif}</style>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BF953F"/>
+      <stop offset="25%" stop-color="#FCF6B5"/>
+      <stop offset="50%" stop-color="#B38728"/>
+      <stop offset="75%" stop-color="#FBF5B7"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+    <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8B4B4"/>
+      <stop offset="50%" stop-color="#F5D0D0"/>
+      <stop offset="100%" stop-color="#C48888"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2C2C30"/>
+      <stop offset="100%" stop-color="#0D0D0F"/>
+    </radialGradient>
+    <filter id="sh" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#00000088"/>
+    </filter>
+    <filter id="gl" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="br"/>
+      <feMerge><feMergeNode in="br"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)" rx="28"/>
+  <rect x="12" y="12" width="876" height="536" fill="none" stroke="url(#g)" stroke-width="0.6" rx="24" opacity="0.14"/>
+  <rect x="22" y="22" width="856" height="516" fill="none" stroke="url(#g)" stroke-width="0.3" rx="18" opacity="0.07"/>
+  <text x="60" y="70" font-size="18" fill="url(#g)" opacity="0.35">&#10022;</text>
+  <text x="840" y="70" font-size="18" fill="url(#g)" opacity="0.35">&#10022;</text>
+  <text x="60" y="495" font-size="18" fill="url(#g)" opacity="0.35">&#10022;</text>
+  <text x="840" y="495" font-size="18" fill="url(#g)" opacity="0.35">&#10022;</text>
+  <path d="M450,350 C430,320 400,310 400,330 C400,345 425,360 450,375 C475,360 500,345 500,330 C500,310 470,320 450,350" fill="#E8B4B4" opacity="0.05"/>
+  <g filter="url(#sh)" class="m">
+    <text text-anchor="middle" font-size="250" font-weight="700" font-style="italic" fill="url(#g)" letter-spacing="-14" transform="translate(285,300)">y</text>
+    <text text-anchor="middle" font-size="280" font-weight="700" font-style="italic" fill="url(#g)" letter-spacing="-14" transform="translate(520,300)">h</text>
+    <text text-anchor="middle" font-size="195" font-weight="400" font-style="normal" fill="url(#rg)" filter="url(#gl)" transform="translate(548,177)">S</text>
+    <text text-anchor="middle" font-size="250" font-weight="700" font-style="italic" fill="url(#g)" letter-spacing="-14" transform="translate(740,300)">y</text>
+  </g>
+  <path d="M 230,430 C 280,405 400,390 450,390 C 500,390 620,405 670,430" fill="none" stroke="url(#g)" stroke-width="0.7" opacity="0.14"/>
+  <path d="M 260,442 C 300,422 400,410 450,410 C 500,410 600,422 640,442" fill="none" stroke="url(#g)" stroke-width="0.4" opacity="0.08"/>
+  <text x="450" y="505" text-anchor="middle" font-size="13" letter-spacing="10" fill="url(#g)" opacity="0.32" style="font-family:'Playfair Display',serif">&#10022; QIXI CONFESSION &#10022;</text>
+  <text x="450" y="528" text-anchor="middle" font-size="11" letter-spacing="8" fill="url(#rg)" opacity="0.25" style="font-family:'Playfair Display',serif">yhy &#10084; ysy</text>
+</svg>
+</div>
+<div class="tag">✦ 七夕 · QIXI · 告白 ✦</div>
+<div class="heart">yhy ❤ ysy</div>
+<div class="hint">SVG 矢量 logo · 可直接用于网站头部 / favicon / 背景</div>
+</body>
+</html>
